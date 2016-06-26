@@ -1,10 +1,5 @@
 def special(char)
-	if (char == ' ' || char == '?' || char == '!' || char == '%' || char == 
-	'&')
-	return true
-	else
-	return false
-	end
+	return [' ', ' ?', '!', '&', '#', '%', '@', '$'].include? char
 end
 
 def ceasar(string, key)
