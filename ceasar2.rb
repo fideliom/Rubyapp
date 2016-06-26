@@ -23,8 +23,7 @@ def encrypt
 puts "Please enter your text:"
 text = gets.chomp
 puts "Please enter your key:"
-key = gets.chomp
-key = key.to_i
+key = gets.chomp.to_i
 puts "Your text encrypted with the ceasar cypher:"
 puts "Using the key #{key} :"
 puts ceasar(text, key)
